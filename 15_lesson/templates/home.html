@@ -1,0 +1,11 @@
+{ %  extends "base.html" %}
+{% block title%}Home Page{% endblock %}
+{% block content %}
+  <h1>Test</h1>
+ {% for user in user_lst %}
+      <div class="card">
+      <p>Name: <b>{{name}}</b></p>
+      <p>Email: <b>{{email}}</b></p>
+      </div>
+{% endfor %}
+{% endblock %}
